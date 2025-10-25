@@ -1,0 +1,6 @@
+n=int(input())
+a=list(map(int,input()))
+print(a)
+max_val = max(a)
+ind = a.index(max_val)
+print(ind)
