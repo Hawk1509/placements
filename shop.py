@@ -52,3 +52,20 @@ Stock limits:
 * Maximum items bought = 3
 
 '''
+
+import math
+def cheap_shop(a,c,b,d,h):
+	packs_a = math.ceil(h/a)
+	price_a = packs_a*c
+
+	packs_b=math.ceil(h/b)
+	price_b=packs_b*d
+
+	if price_a>price_b:
+		print("shop b")
+	elif price_b>price_a:
+		print("shop a")
+	else:
+		print("either")
+cheap_shop(a=5,c=10,b=3,d=7,h=12)
+ 
